@@ -2,4 +2,5 @@
   (lib (name STM32)(type Legacy)(uri ${KIPRJMOD}/Kicad-STM32/Symbols/YAAJ_STM32.lib)(options "")(descr ""))
   (lib (name tobor)(type Legacy)(uri ${KIPRJMOD}/library/tobor.lib)(options "")(descr ""))
   (lib (name TCRT5000)(type Legacy)(uri ${KIPRJMOD}/library/TCRT5000.lib)(options "")(descr ""))
+  (lib (name LT1161CNPBF)(type Legacy)(uri ${KIPRJMOD}/library/LT1161CNPBF.lib)(options "")(descr ""))
 )
