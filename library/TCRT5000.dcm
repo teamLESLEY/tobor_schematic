@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TCRT5000
+D Reflective Optical Sensor with Transistor Output
+K Tape sensor
+F Vishay
+$ENDCMP
+#
+#End Doc Library
