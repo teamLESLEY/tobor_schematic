@@ -318,7 +318,6 @@ Wire Wire Line
 	3500 3700 3750 3700
 NoConn ~ 5200 3250
 NoConn ~ 5200 3350
-NoConn ~ 5200 4250
 NoConn ~ 5200 4750
 NoConn ~ 6750 4850
 NoConn ~ 6750 4750
@@ -754,10 +753,8 @@ Wire Wire Line
 	5600 6250 5150 6250
 Wire Wire Line
 	7000 4050 6750 4050
-Text Label 7000 4250 0    50   ~ 0
+Text Label 7000 4150 0    50   ~ 0
 DebugPot
-Wire Wire Line
-	7000 4250 6750 4250
 $Comp
 L STM32:BluePill_1 BP?1
 U 1 1 5EF58E87
@@ -813,10 +810,6 @@ SDA
 NoConn ~ 5200 4150
 NoConn ~ 5200 3950
 NoConn ~ 5200 4050
-NoConn ~ 5200 3450
-NoConn ~ 6750 3650
-NoConn ~ 6750 3750
-NoConn ~ 6750 4150
 Wire Wire Line
 	2200 1450 2300 1450
 Wire Wire Line
@@ -853,4 +846,207 @@ Wire Wire Line
 	1300 1850 1400 1850
 Wire Wire Line
 	6750 3250 7250 3250
+Wire Wire Line
+	7000 4150 6750 4150
+NoConn ~ 6750 4250
+$Comp
+L Motor:Motor_Servo M?
+U 1 1 5F00F8D5
+P 4700 1450
+F 0 "M?" H 5032 1515 50  0000 L CNN
+F 1 "Bin motor" H 5032 1424 50  0000 L CNN
+F 2 "" H 4700 1260 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4700 1260 50  0001 C CNN
+	1    4700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M?
+U 1 1 5F0107C0
+P 4700 2000
+F 0 "M?" H 5032 2065 50  0000 L CNN
+F 1 "Party Popper Left" H 5032 1974 50  0000 L CNN
+F 2 "" H 4700 1810 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4700 1810 50  0001 C CNN
+	1    4700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M?
+U 1 1 5F011350
+P 4700 2550
+F 0 "M?" H 5032 2615 50  0000 L CNN
+F 1 "Party Popper Right" H 5032 2524 50  0000 L CNN
+F 2 "" H 4700 2360 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4700 2360 50  0001 C CNN
+	1    4700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F0126EA
+P 4050 1450
+F 0 "#PWR?" H 4050 1300 50  0001 C CNN
+F 1 "+5V" H 4065 1623 50  0000 C CNN
+F 2 "" H 4050 1450 50  0001 C CNN
+F 3 "" H 4050 1450 50  0001 C CNN
+	1    4050 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F012A59
+P 4050 2550
+F 0 "#PWR?" H 4050 2400 50  0001 C CNN
+F 1 "+5V" H 4065 2723 50  0000 C CNN
+F 2 "" H 4050 2550 50  0001 C CNN
+F 3 "" H 4050 2550 50  0001 C CNN
+	1    4050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F01C8B6
+P 4050 1550
+F 0 "#PWR?" H 4050 1300 50  0001 C CNN
+F 1 "GND" H 4055 1377 50  0000 C CNN
+F 2 "" H 4050 1550 50  0001 C CNN
+F 3 "" H 4050 1550 50  0001 C CNN
+	1    4050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F01CD54
+P 4050 2100
+F 0 "#PWR?" H 4050 1850 50  0001 C CNN
+F 1 "GND" H 4055 1927 50  0000 C CNN
+F 2 "" H 4050 2100 50  0001 C CNN
+F 3 "" H 4050 2100 50  0001 C CNN
+	1    4050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F0128A7
+P 4050 2000
+F 0 "#PWR?" H 4050 1850 50  0001 C CNN
+F 1 "+5V" H 4065 2173 50  0000 C CNN
+F 2 "" H 4050 2000 50  0001 C CNN
+F 3 "" H 4050 2000 50  0001 C CNN
+	1    4050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F02E2B0
+P 4050 2650
+F 0 "#PWR?" H 4050 2400 50  0001 C CNN
+F 1 "GND" H 4055 2477 50  0000 C CNN
+F 2 "" H 4050 2650 50  0001 C CNN
+F 3 "" H 4050 2650 50  0001 C CNN
+	1    4050 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2550 4400 2550
+Wire Wire Line
+	4400 2650 4050 2650
+Wire Wire Line
+	4050 2100 4400 2100
+Wire Wire Line
+	4400 2000 4050 2000
+Wire Wire Line
+	4050 1550 4400 1550
+Wire Wire Line
+	4400 1450 4050 1450
+Text Label 4400 1350 2    50   ~ 0
+Bin
+Text Label 4400 1900 2    50   ~ 0
+PopL
+Text Label 4400 2450 2    50   ~ 0
+PopR
+Text Label 4950 3450 2    50   ~ 0
+Bin
+Wire Wire Line
+	4950 3450 5200 3450
+Text Label 7000 3650 0    50   ~ 0
+PopL
+Text Label 7000 3750 0    50   ~ 0
+PopR
+Wire Wire Line
+	7000 3750 6750 3750
+Wire Wire Line
+	6750 3650 7000 3650
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5F0D4619
+P 1850 4100
+F 0 "#PWR?" H 1850 3900 50  0001 C CNN
+F 1 "GNDPWR" H 1854 3946 50  0000 C CNN
+F 2 "" H 1850 4050 50  0001 C CNN
+F 3 "" H 1850 4050 50  0001 C CNN
+	1    1850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5F0D2B87
+P 1950 3900
+F 0 "Q?" H 2156 3946 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 2156 3855 50  0000 L CNN
+F 2 "" H 2150 4000 50  0001 C CNN
+F 3 "~" H 1950 3900 50  0001 C CNN
+	1    1950 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3900 2850 3900
+Wire Wire Line
+	2850 3900 2850 4250
+Wire Wire Line
+	2850 4250 5200 4250
+$Comp
+L Motor:Motor_DC_ALT M?
+U 1 1 5F0ED853
+P 1850 3400
+F 0 "M?" H 1997 3396 50  0000 L CNN
+F 1 "Can brush" H 1997 3305 50  0000 L CNN
+F 2 "" H 1850 3310 50  0001 C CNN
+F 3 "~" H 1850 3310 50  0001 C CNN
+	1    1850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F0EEAE3
+P 1550 3450
+F 0 "C?" H 1435 3404 50  0000 R CNN
+F 1 "100n" H 1435 3495 50  0000 R CNN
+F 2 "" H 1588 3300 50  0001 C CNN
+F 3 "~" H 1550 3450 50  0001 C CNN
+	1    1550 3450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1550 3600 1550 3700
+Wire Wire Line
+	1550 3700 1850 3700
+Connection ~ 1850 3700
+Wire Wire Line
+	1550 3300 1550 3200
+Wire Wire Line
+	1550 3200 1850 3200
+$Comp
+L power:+9V #PWR?
+U 1 1 5F0FAB23
+P 1850 3200
+F 0 "#PWR?" H 1850 3050 50  0001 C CNN
+F 1 "+9V" H 1865 3373 50  0000 C CNN
+F 2 "" H 1850 3200 50  0001 C CNN
+F 3 "" H 1850 3200 50  0001 C CNN
+	1    1850 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 1850 3200
 $EndSCHEMATC
