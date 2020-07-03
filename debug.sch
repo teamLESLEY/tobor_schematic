@@ -1,0 +1,410 @@
+EESchema Schematic File Version 4
+LIBS:tobor_schematic-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5F275DF5
+P 1350 1450
+AR Path="/5F275DF5" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F275DF5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1350 1200 50  0001 C CNN
+F 1 "GND" H 1355 1277 50  0000 C CNN
+F 2 "" H 1350 1450 50  0001 C CNN
+F 3 "" H 1350 1450 50  0001 C CNN
+	1    1350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F275DFB
+P 1550 1450
+AR Path="/5F275DFB" Ref="SW?"  Part="1" 
+AR Path="/5F2542FC/5F275DFB" Ref="SW3"  Part="1" 
+F 0 "SW3" H 1550 1735 50  0000 C CNN
+F 1 "SW_Push" H 1550 1644 50  0000 C CNN
+F 2 "" H 1550 1650 50  0001 C CNN
+F 3 "~" H 1550 1650 50  0001 C CNN
+	1    1550 1450
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 2650 1300 500  350 
+U 5F275DFF
+F0 "Schmitt 1" 50
+F1 "schmitt.sch" 50
+F2 "In" I L 2650 1450 50 
+F3 "Out" O R 3150 1450 50 
+$EndSheet
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F275E05
+P 1900 1150
+AR Path="/5F275E05" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F275E05" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1900 1000 50  0001 C CNN
+F 1 "+3V3" H 1915 1323 50  0000 C CNN
+F 2 "" H 1900 1150 50  0001 C CNN
+F 3 "" H 1900 1150 50  0001 C CNN
+	1    1900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F275E0B
+P 2300 1750
+AR Path="/5F275E0B" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F275E0B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2300 1500 50  0001 C CNN
+F 1 "GND" H 2305 1577 50  0000 C CNN
+F 2 "" H 2300 1750 50  0001 C CNN
+F 3 "" H 2300 1750 50  0001 C CNN
+	1    2300 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1450 1900 1450
+$Comp
+L Device:R R?
+U 1 1 5F275E12
+P 1900 1300
+AR Path="/5F275E12" Ref="R?"  Part="1" 
+AR Path="/5F2542FC/5F275E12" Ref="R15"  Part="1" 
+F 0 "R15" H 1831 1254 50  0000 R CNN
+F 1 "1k" H 1831 1345 50  0000 R CNN
+F 2 "" V 1830 1300 50  0001 C CNN
+F 3 "~" H 1900 1300 50  0001 C CNN
+	1    1900 1300
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F275E18
+P 2100 1450
+AR Path="/5F275E18" Ref="R?"  Part="1" 
+AR Path="/5F2542FC/5F275E18" Ref="R17"  Part="1" 
+F 0 "R17" V 1893 1450 50  0000 C CNN
+F 1 "10k" V 1984 1450 50  0000 C CNN
+F 2 "" V 2030 1450 50  0001 C CNN
+F 3 "~" H 2100 1450 50  0001 C CNN
+	1    2100 1450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3100 1450 3300 1450
+$Comp
+L Device:C C?
+U 1 1 5F275E20
+P 2300 1600
+AR Path="/5F275E20" Ref="C?"  Part="1" 
+AR Path="/5F2542FC/5F275E20" Ref="C12"  Part="1" 
+F 0 "C12" H 2415 1646 50  0000 L CNN
+F 1 "4.7u" H 2415 1555 50  0000 L CNN
+F 2 "" H 2338 1450 50  0001 C CNN
+F 3 "~" H 2300 1600 50  0001 C CNN
+	1    2300 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1450 2300 1450
+Connection ~ 2300 1450
+Wire Wire Line
+	2300 1450 2650 1450
+Wire Wire Line
+	1900 1450 1950 1450
+Connection ~ 1900 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5F289CC6
+P 4950 4850
+AR Path="/5F289CC6" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F289CC6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4950 4600 50  0001 C CNN
+F 1 "GND" H 4955 4677 50  0000 C CNN
+F 2 "" H 4950 4850 50  0001 C CNN
+F 3 "" H 4950 4850 50  0001 C CNN
+	1    4950 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4850 4950 4800
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 5F289CCD
+P 4850 4600
+AR Path="/5F289CCD" Ref="J?"  Part="1" 
+AR Path="/5F2542FC/5F289CCD" Ref="J1"  Part="1" 
+F 0 "J1" V 4788 4412 50  0000 R CNN
+F 1 "Programmer" V 4697 4412 50  0000 R CNN
+F 2 "" H 4850 4600 50  0001 C CNN
+F 3 "~" H 4850 4600 50  0001 C CNN
+	1    4850 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L tobor:SSD1306 D?
+U 1 1 5F289CD3
+P 2300 3500
+AR Path="/5F289CD3" Ref="D?"  Part="1" 
+AR Path="/5F2542FC/5F289CD3" Ref="D1"  Part="1" 
+F 0 "D1" H 2308 3615 50  0000 C CNN
+F 1 "SSD1306" H 2308 3524 50  0000 C CNN
+F 2 "" H 2300 3500 50  0001 C CNN
+F 3 "" H 2300 3500 50  0001 C CNN
+	1    2300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F289CD9
+P 2900 3650
+AR Path="/5F289CD9" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F289CD9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2900 3500 50  0001 C CNN
+F 1 "+3V3" H 2915 3823 50  0000 C CNN
+F 2 "" H 2900 3650 50  0001 C CNN
+F 3 "" H 2900 3650 50  0001 C CNN
+	1    2900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3650 2750 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5F289CE0
+P 2900 3950
+AR Path="/5F289CE0" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F289CE0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2900 3700 50  0001 C CNN
+F 1 "GND" H 2905 3777 50  0000 C CNN
+F 2 "" H 2900 3950 50  0001 C CNN
+F 3 "" H 2900 3950 50  0001 C CNN
+	1    2900 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3950 2750 3950
+Wire Wire Line
+	2900 3850 2750 3850
+Wire Wire Line
+	2750 3750 2900 3750
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F28ECF9
+P 5900 4600
+AR Path="/5F28ECF9" Ref="SW?"  Part="1" 
+AR Path="/5F2542FC/5F28ECF9" Ref="SW6"  Part="1" 
+F 0 "SW6" H 5900 4885 50  0000 C CNN
+F 1 "External RST" H 5900 4794 50  0000 C CNN
+F 2 "" H 5900 4800 50  0001 C CNN
+F 3 "~" H 5900 4800 50  0001 C CNN
+	1    5900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5F28ED00
+P 3900 1850
+AR Path="/5F28ED00" Ref="RV?"  Part="1" 
+AR Path="/5F2542FC/5F28ED00" Ref="RV1"  Part="1" 
+F 0 "RV1" H 3831 1896 50  0000 R CNN
+F 1 "100k" H 3831 1805 50  0000 R CNN
+F 2 "" H 3900 1850 50  0001 C CNN
+F 3 "~" H 3900 1850 50  0001 C CNN
+	1    3900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F28ED06
+P 3900 2000
+AR Path="/5F28ED06" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F28ED06" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3900 1750 50  0001 C CNN
+F 1 "GND" H 3905 1827 50  0000 C CNN
+F 2 "" H 3900 2000 50  0001 C CNN
+F 3 "" H 3900 2000 50  0001 C CNN
+	1    3900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F28ED0C
+P 3900 1700
+AR Path="/5F28ED0C" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F28ED0C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3900 1550 50  0001 C CNN
+F 1 "+3V3" H 3915 1873 50  0000 C CNN
+F 2 "" H 3900 1700 50  0001 C CNN
+F 3 "" H 3900 1700 50  0001 C CNN
+	1    3900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F2E2684
+P 1350 2400
+AR Path="/5F2E2684" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F2E2684" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1350 2150 50  0001 C CNN
+F 1 "GND" H 1355 2227 50  0000 C CNN
+F 2 "" H 1350 2400 50  0001 C CNN
+F 3 "" H 1350 2400 50  0001 C CNN
+	1    1350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F2E268A
+P 1550 2400
+AR Path="/5F2E268A" Ref="SW?"  Part="1" 
+AR Path="/5F2542FC/5F2E268A" Ref="SW4"  Part="1" 
+F 0 "SW4" H 1550 2685 50  0000 C CNN
+F 1 "SW_Push" H 1550 2594 50  0000 C CNN
+F 2 "" H 1550 2600 50  0001 C CNN
+F 3 "~" H 1550 2600 50  0001 C CNN
+	1    1550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F2E2694
+P 1900 2100
+AR Path="/5F2E2694" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F2E2694" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1900 1950 50  0001 C CNN
+F 1 "+3V3" H 1915 2273 50  0000 C CNN
+F 2 "" H 1900 2100 50  0001 C CNN
+F 3 "" H 1900 2100 50  0001 C CNN
+	1    1900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F2E269A
+P 2300 2700
+AR Path="/5F2E269A" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F2E269A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2300 2450 50  0001 C CNN
+F 1 "GND" H 2305 2527 50  0000 C CNN
+F 2 "" H 2300 2700 50  0001 C CNN
+F 3 "" H 2300 2700 50  0001 C CNN
+	1    2300 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2400 1900 2400
+$Comp
+L Device:R R?
+U 1 1 5F2E26A1
+P 1900 2250
+AR Path="/5F2E26A1" Ref="R?"  Part="1" 
+AR Path="/5F2542FC/5F2E26A1" Ref="R16"  Part="1" 
+F 0 "R16" H 1831 2204 50  0000 R CNN
+F 1 "1k" H 1831 2295 50  0000 R CNN
+F 2 "" V 1830 2250 50  0001 C CNN
+F 3 "~" H 1900 2250 50  0001 C CNN
+	1    1900 2250
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F2E26A7
+P 2100 2400
+AR Path="/5F2E26A7" Ref="R?"  Part="1" 
+AR Path="/5F2542FC/5F2E26A7" Ref="R18"  Part="1" 
+F 0 "R18" V 1893 2400 50  0000 C CNN
+F 1 "10k" V 1984 2400 50  0000 C CNN
+F 2 "" V 2030 2400 50  0001 C CNN
+F 3 "~" H 2100 2400 50  0001 C CNN
+	1    2100 2400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3100 2400 3300 2400
+$Comp
+L Device:C C?
+U 1 1 5F2E26AF
+P 2300 2550
+AR Path="/5F2E26AF" Ref="C?"  Part="1" 
+AR Path="/5F2542FC/5F2E26AF" Ref="C13"  Part="1" 
+F 0 "C13" H 2415 2596 50  0000 L CNN
+F 1 "4.7u" H 2415 2505 50  0000 L CNN
+F 2 "" H 2338 2400 50  0001 C CNN
+F 3 "~" H 2300 2550 50  0001 C CNN
+	1    2300 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2400 2300 2400
+Connection ~ 2300 2400
+Wire Wire Line
+	2300 2400 2650 2400
+Wire Wire Line
+	1900 2400 1950 2400
+Connection ~ 1900 2400
+Text HLabel 3300 1450 2    50   Output ~ 0
+Up
+Text HLabel 3300 2400 2    50   Output ~ 0
+Down
+Text HLabel 4050 1850 2    50   Output ~ 0
+Pot
+Text HLabel 2900 3750 2    50   Input ~ 0
+SCL
+Text HLabel 2900 3850 2    50   Input ~ 0
+SDA
+Text HLabel 4750 4800 3    50   Output ~ 0
+Prog1
+Text HLabel 4850 4800 3    50   Output ~ 0
+Prog2
+$Comp
+L power:GND #PWR?
+U 1 1 5F2E6BF1
+P 5700 4600
+F 0 "#PWR?" H 5700 4350 50  0001 C CNN
+F 1 "GND" H 5705 4427 50  0000 C CNN
+F 2 "" H 5700 4600 50  0001 C CNN
+F 3 "" H 5700 4600 50  0001 C CNN
+	1    5700 4600
+	1    0    0    -1  
+$EndComp
+Text HLabel 6100 4600 2    50   Output ~ 0
+Reset
+$Sheet
+S 2650 2250 500  350 
+U 5F2E268E
+F0 "Schmitt 2" 50
+F1 "schmitt.sch" 50
+F2 "In" I L 2650 2400 50 
+F3 "Out" O R 3150 2400 50 
+$EndSheet
+$Comp
+L Switch:SW_SPDT SW5
+U 1 1 5F2F0CEE
+P 5800 5250
+F 0 "SW5" H 5800 5535 50  0000 C CNN
+F 1 "SW_SPDT" H 5800 5444 50  0000 C CNN
+F 2 "" H 5800 5250 50  0001 C CNN
+F 3 "~" H 5800 5250 50  0001 C CNN
+	1    5800 5250
+	1    0    0    -1  
+$EndComp
+Text HLabel 5600 5250 0    50   Input ~ 0
+BootJump
+Text HLabel 6000 5150 2    50   Output ~ 0
+BootRun
+Text HLabel 6000 5350 2    50   Output ~ 0
+BootWrite
+$EndSCHEMATC

@@ -1,0 +1,165 @@
+EESchema Schematic File Version 4
+LIBS:tobor_schematic-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Comparator:LM311 U?
+U 1 1 5F137B8A
+P 5450 4150
+AR Path="/5F0E12A7/5F137B8A" Ref="U?"  Part="1" 
+AR Path="/5F208C5B/5F137B8A" Ref="U?"  Part="1" 
+AR Path="/5F2542FC/5F275DFF/5F137B8A" Ref="U11"  Part="1" 
+AR Path="/5F2542FC/5F2E268E/5F137B8A" Ref="U12"  Part="1" 
+F 0 "U12" H 5800 4100 50  0000 L CNN
+F 1 "LM311" H 5800 4000 50  0000 L CNN
+F 2 "" H 5450 4150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm311.pdf" H 5450 4150 50  0001 C CNN
+	1    5450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F137F5A
+P 5350 3850
+AR Path="/5F0E12A7/5F137F5A" Ref="#PWR?"  Part="1" 
+AR Path="/5F208C5B/5F137F5A" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F275DFF/5F137F5A" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F2E268E/5F137F5A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5350 3700 50  0001 C CNN
+F 1 "+3V3" H 5365 4023 50  0000 C CNN
+F 2 "" H 5350 3850 50  0001 C CNN
+F 3 "" H 5350 3850 50  0001 C CNN
+	1    5350 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5450 3850
+NoConn ~ 5550 3850
+$Comp
+L Device:R R?
+U 1 1 5F138774
+P 5450 3500
+AR Path="/5F0E12A7/5F138774" Ref="R?"  Part="1" 
+AR Path="/5F208C5B/5F138774" Ref="R?"  Part="1" 
+AR Path="/5F2542FC/5F275DFF/5F138774" Ref="R21"  Part="1" 
+AR Path="/5F2542FC/5F2E268E/5F138774" Ref="R24"  Part="1" 
+F 0 "R24" V 5243 3500 50  0000 C CNN
+F 1 "47k" V 5334 3500 50  0000 C CNN
+F 2 "" V 5380 3500 50  0001 C CNN
+F 3 "~" H 5450 3500 50  0001 C CNN
+	1    5450 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 3500 5750 3500
+Wire Wire Line
+	5750 3500 5750 4150
+Wire Wire Line
+	5300 3500 5150 3500
+Wire Wire Line
+	5150 3500 5150 4050
+$Comp
+L Device:R R?
+U 1 1 5F138BF8
+P 4800 3900
+AR Path="/5F0E12A7/5F138BF8" Ref="R?"  Part="1" 
+AR Path="/5F208C5B/5F138BF8" Ref="R?"  Part="1" 
+AR Path="/5F2542FC/5F275DFF/5F138BF8" Ref="R19"  Part="1" 
+AR Path="/5F2542FC/5F2E268E/5F138BF8" Ref="R22"  Part="1" 
+F 0 "R22" H 4870 3946 50  0000 L CNN
+F 1 "47k" H 4870 3855 50  0000 L CNN
+F 2 "" V 4730 3900 50  0001 C CNN
+F 3 "~" H 4800 3900 50  0001 C CNN
+	1    4800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F138FD9
+P 4800 4200
+AR Path="/5F0E12A7/5F138FD9" Ref="R?"  Part="1" 
+AR Path="/5F208C5B/5F138FD9" Ref="R?"  Part="1" 
+AR Path="/5F2542FC/5F275DFF/5F138FD9" Ref="R20"  Part="1" 
+AR Path="/5F2542FC/5F2E268E/5F138FD9" Ref="R23"  Part="1" 
+F 0 "R23" H 4870 4246 50  0000 L CNN
+F 1 "47k" H 4870 4155 50  0000 L CNN
+F 2 "" V 4730 4200 50  0001 C CNN
+F 3 "~" H 4800 4200 50  0001 C CNN
+	1    4800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4050 5150 4050
+Connection ~ 4800 4050
+Connection ~ 5150 4050
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F139269
+P 4800 3750
+AR Path="/5F0E12A7/5F139269" Ref="#PWR?"  Part="1" 
+AR Path="/5F208C5B/5F139269" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F275DFF/5F139269" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F2E268E/5F139269" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4800 3600 50  0001 C CNN
+F 1 "+3V3" H 4815 3923 50  0000 C CNN
+F 2 "" H 4800 3750 50  0001 C CNN
+F 3 "" H 4800 3750 50  0001 C CNN
+	1    4800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F13966B
+P 4800 4350
+AR Path="/5F0E12A7/5F13966B" Ref="#PWR?"  Part="1" 
+AR Path="/5F208C5B/5F13966B" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F275DFF/5F13966B" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F2E268E/5F13966B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4800 4100 50  0001 C CNN
+F 1 "GND" H 4805 4177 50  0000 C CNN
+F 2 "" H 4800 4350 50  0001 C CNN
+F 3 "" H 4800 4350 50  0001 C CNN
+	1    4800 4350
+	1    0    0    -1  
+$EndComp
+Text HLabel 6000 4150 2    50   Output ~ 0
+Out
+Wire Wire Line
+	5750 4150 6000 4150
+Connection ~ 5750 4150
+$Comp
+L power:GND #PWR?
+U 1 1 5F13C29E
+P 5400 4450
+AR Path="/5F0E12A7/5F13C29E" Ref="#PWR?"  Part="1" 
+AR Path="/5F208C5B/5F13C29E" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F275DFF/5F13C29E" Ref="#PWR?"  Part="1" 
+AR Path="/5F2542FC/5F2E268E/5F13C29E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5400 4200 50  0001 C CNN
+F 1 "GND" H 5405 4277 50  0000 C CNN
+F 2 "" H 5400 4450 50  0001 C CNN
+F 3 "" H 5400 4450 50  0001 C CNN
+	1    5400 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4450 5400 4450
+Connection ~ 5400 4450
+Wire Wire Line
+	5400 4450 5450 4450
+Text HLabel 5150 4800 3    50   Input ~ 0
+iN
+Wire Wire Line
+	5150 4800 5150 4250
+$EndSCHEMATC
