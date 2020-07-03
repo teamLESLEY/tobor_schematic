@@ -850,10 +850,10 @@ Wire Wire Line
 	7000 4150 6750 4150
 NoConn ~ 6750 4250
 $Comp
-L Motor:Motor_Servo M?
+L Motor:Motor_Servo M4
 U 1 1 5F00F8D5
 P 4700 1450
-F 0 "M?" H 5032 1515 50  0000 L CNN
+F 0 "M4" H 5032 1515 50  0000 L CNN
 F 1 "Bin motor" H 5032 1424 50  0000 L CNN
 F 2 "" H 4700 1260 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4700 1260 50  0001 C CNN
@@ -861,10 +861,10 @@ F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4700 1260
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_Servo M?
+L Motor:Motor_Servo M5
 U 1 1 5F0107C0
 P 4700 2000
-F 0 "M?" H 5032 2065 50  0000 L CNN
+F 0 "M5" H 5032 2065 50  0000 L CNN
 F 1 "Party Popper Left" H 5032 1974 50  0000 L CNN
 F 2 "" H 4700 1810 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4700 1810 50  0001 C CNN
@@ -872,10 +872,10 @@ F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4700 1810
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_Servo M?
+L Motor:Motor_Servo M6
 U 1 1 5F011350
 P 4700 2550
-F 0 "M?" H 5032 2615 50  0000 L CNN
+F 0 "M6" H 5032 2615 50  0000 L CNN
 F 1 "Party Popper Right" H 5032 2524 50  0000 L CNN
 F 2 "" H 4700 2360 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4700 2360 50  0001 C CNN
@@ -990,10 +990,10 @@ F 3 "" H 1850 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GDS Q13
 U 1 1 5F0D2B87
 P 1950 3900
-F 0 "Q?" H 2156 3946 50  0000 L CNN
+F 0 "Q13" H 2156 3946 50  0000 L CNN
 F 1 "Q_NMOS_GDS" H 2156 3855 50  0000 L CNN
 F 2 "" H 2150 4000 50  0001 C CNN
 F 3 "~" H 1950 3900 50  0001 C CNN
@@ -1007,10 +1007,10 @@ Wire Wire Line
 Wire Wire Line
 	2850 4250 5200 4250
 $Comp
-L Motor:Motor_DC_ALT M?
+L Motor:Motor_DC_ALT M3
 U 1 1 5F0ED853
 P 1850 3400
-F 0 "M?" H 1997 3396 50  0000 L CNN
+F 0 "M3" H 1997 3396 50  0000 L CNN
 F 1 "Can brush" H 1997 3305 50  0000 L CNN
 F 2 "" H 1850 3310 50  0001 C CNN
 F 3 "~" H 1850 3310 50  0001 C CNN
@@ -1018,10 +1018,10 @@ F 3 "~" H 1850 3310 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C14
 U 1 1 5F0EEAE3
 P 1550 3450
-F 0 "C?" H 1435 3404 50  0000 R CNN
+F 0 "C14" H 1435 3404 50  0000 R CNN
 F 1 "100n" H 1435 3495 50  0000 R CNN
 F 2 "" H 1588 3300 50  0001 C CNN
 F 3 "~" H 1550 3450 50  0001 C CNN

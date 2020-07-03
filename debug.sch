@@ -103,7 +103,7 @@ F 3 "~" H 2100 1450 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	3100 1450 3300 1450
+	3150 1450 3300 1450
 $Comp
 L Device:C C?
 U 1 1 5F275E20
@@ -333,7 +333,7 @@ F 3 "~" H 2100 2400 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	3100 2400 3300 2400
+	3150 2400 3300 2400
 $Comp
 L Device:C C?
 U 1 1 5F2E26AF
