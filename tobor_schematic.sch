@@ -344,7 +344,6 @@ NoConn ~ 6750 4850
 NoConn ~ 6750 4750
 NoConn ~ 6750 4650
 NoConn ~ 6750 4350
-NoConn ~ 6750 4250
 NoConn ~ 6750 3550
 NoConn ~ 6750 3450
 Wire Wire Line
@@ -427,8 +426,6 @@ T2
 Connection ~ 9250 2150
 Wire Wire Line
 	9250 2150 9200 2150
-Text Label 8950 2150 0    50   ~ 0
-T1
 Connection ~ 8900 2150
 Wire Wire Line
 	8900 2150 8950 2150
@@ -616,4 +613,111 @@ F 3 "~" H 4000 2750 50  0001 C CNN
 	1    4000 2750
 	0    -1   -1   0   
 $EndComp
+Text Notes 8200 1300 0    50   ~ 0
+Dory
+Wire Notes Line
+	8150 1350 10150 1350
+Wire Notes Line
+	10150 1350 10150 2850
+Wire Notes Line
+	10150 2850 8150 2850
+Wire Notes Line
+	8150 2850 8150 1350
+$Comp
+L TCRT5000:TCRT5000 U10
+U 1 1 5F00A78B
+P 6800 2300
+F 0 "U10" H 6800 2665 50  0000 C CNN
+F 1 "TCRT5000" H 6800 2574 50  0000 C CNN
+F 2 "OPTO_TCRT5000" H 6800 2300 50  0001 L BNN
+F 3 "Vishay" H 6800 2300 50  0001 L BNN
+F 4 "7.2mm" H 6800 2300 50  0001 L BNN "Field4"
+F 5 "Manufacturer recommendations" H 6800 2300 50  0001 L BNN "Field5"
+F 6 "1.7" H 6800 2300 50  0001 L BNN "Field6"
+	1    6800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F011CDC
+P 6800 2650
+F 0 "#PWR?" H 6800 2400 50  0001 C CNN
+F 1 "GND" H 6805 2477 50  0000 C CNN
+F 2 "" H 6800 2650 50  0001 C CNN
+F 3 "" H 6800 2650 50  0001 C CNN
+	1    6800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2400 6500 2650
+Wire Wire Line
+	6500 2650 6800 2650
+Wire Wire Line
+	6800 2650 7100 2650
+Wire Wire Line
+	7100 2650 7100 2400
+Connection ~ 6800 2650
+$Comp
+L Device:R R13
+U 1 1 5F015A8B
+P 6500 1750
+F 0 "R13" H 6570 1796 50  0000 L CNN
+F 1 "100" H 6570 1705 50  0000 L CNN
+F 2 "" V 6430 1750 50  0001 C CNN
+F 3 "~" H 6500 1750 50  0001 C CNN
+	1    6500 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1900 6500 2200
+$Comp
+L Device:R R14
+U 1 1 5F018676
+P 7100 1750
+F 0 "R14" H 7170 1796 50  0000 L CNN
+F 1 "10k" H 7170 1705 50  0000 L CNN
+F 2 "" V 7030 1750 50  0001 C CNN
+F 3 "~" H 7100 1750 50  0001 C CNN
+	1    7100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F01B430
+P 6800 1600
+F 0 "#PWR?" H 6800 1450 50  0001 C CNN
+F 1 "+3V3" H 6815 1773 50  0000 C CNN
+F 2 "" H 6800 1600 50  0001 C CNN
+F 3 "" H 6800 1600 50  0001 C CNN
+	1    6800 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1600 6800 1600
+Connection ~ 6800 1600
+Wire Wire Line
+	6800 1600 7100 1600
+Wire Notes Line
+	7350 1350 7350 2900
+Wire Notes Line
+	6350 2900 6350 1350
+Text Notes 6450 1300 0    50   ~ 0
+Nemo
+Wire Notes Line
+	6350 1350 7350 1350
+Wire Notes Line
+	7350 2900 6350 2900
+Text Label 7150 2200 0    50   ~ 0
+N
+Text Label 7000 4250 0    50   ~ 0
+N
+Text Label 8950 2150 0    50   ~ 0
+T1
+Wire Wire Line
+	7000 4250 6750 4250
+Wire Wire Line
+	7100 1900 7100 2200
+Wire Wire Line
+	7100 2200 7150 2200
+Connection ~ 7100 2200
 $EndSCHEMATC
